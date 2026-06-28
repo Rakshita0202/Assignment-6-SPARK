@@ -1,0 +1,71 @@
+Spark Assignment Report
+Name: Rakshita Rathi
+
+Objective
+
+The objective of this assignment was to understand Apache Spark
+architecture and perform efficient data processing using PySpark
+DataFrames. The assignment covered Spark architecture, lazy evaluation,
+schema handling, filtering, transformations, actions, null handling,
+optimized file formats, and performance optimization techniques.
+
+Spark Architecture
+
+Apache Spark follows a master-worker architecture consisting of: -
+Driver Program: Creates the SparkSession, builds the DAG, and schedules
+tasks. - Cluster Manager: Allocates resources to executors. - Executors:
+Execute tasks, process data, and return results.
+
+Dataset
+
+The employee dataset contained the following columns: - id - name -
+age - salary - department - region
+
+Tasks Performed
+
+1.  Created a Spark Session.
+2.  Loaded the CSV dataset.
+3.  Examined the schema and data.
+4.  Selected required columns.
+5.  Filtered employee records based on salary.
+6.  Renamed the salary column to employee_salary.
+7.  Converted age to integer.
+8.  Added annual_salary column.
+9.  Handled null values.
+10. Performed groupBy aggregation (wide transformation).
+11. Demonstrated lazy evaluation using transformations and actions.
+12. Examined the execution plan using explain(True).
+13. Built a simple data processing pipeline.
+
+Performance Concepts
+
+-   Lazy Evaluation delays execution until an action is called.
+-   DAG optimizes execution by combining transformations.
+-   GroupBy causes Shuffle.
+-   Predicate Pushdown improves query performance.
+-   Parquet generally performs better than CSV due to columnar storage
+    and compression.
+
+Results
+
+The assignment successfully demonstrated Spark DataFrame operations,
+schema handling, transformations, actions, filtering, aggregation, and
+performance optimization. Writing CSV and Parquet files could not be
+demonstrated because Hadoop (HADOOP_HOME/winutils.exe) was not
+configured on the Windows environment.
+
+Best Practices
+
+-   Read only required columns.
+-   Filter data as early as possible.
+-   Handle null values before analysis.
+-   Prefer show() over collect() for large datasets.
+-   Use Parquet for analytical workloads.
+-   Minimize unnecessary shuffle operations.
+
+Conclusion
+
+This assignment provided practical experience with Apache Spark and
+PySpark. It demonstrated how Spark processes data efficiently using lazy
+evaluation and optimized execution plans while applying common DataFrame
+operations and performance best practices.
