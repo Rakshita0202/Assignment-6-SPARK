@@ -1,0 +1,8 @@
+id,name,age,salary,department,region
+1,Amit,25,50000,IT,North
+2,Riya,30,60000,HR,South
+3,Rahul,28,55000,IT,North
+4,Riya,30,60000,HR,South
+5,Neha,,45000,Finance,West
+6,Karan,35,,IT,East
+7,,29,52000,Marketing,South
